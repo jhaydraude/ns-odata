@@ -1,0 +1,27 @@
+{
+  "name": "nsodata",
+  "version": "1.0.0",
+  "description": "oData Connector for Nightscout",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhaydraude/ns-odata.git"
+  },
+  "keywords": [
+    "Nightscout",
+    "oData",
+    "Interface"
+  ],
+  "author": "Jeremy Hay Draude",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhaydraude/ns-odata/issues"
+  },
+  "homepage": "https://github.com/jhaydraude/ns-odata#readme",
+  "dependencies": {
+    "node-odata": "^0.7.16"
+  }
+}
