@@ -1,3 +1,6 @@
+//var odata = require('simple-odata-server');
+//var adapter = require('simple-odata-server-mongodb');
+
 var odata = require('node-odata');
 
 var server = odata(process.env.MONGO_URI);
@@ -18,4 +21,4 @@ server.resource('book', {
 server.resource('entries', { device: String, sgv: Number, delta: Number, direction: String, type: String, sysTime: Date, utcOffset: Number, dateString: Date });
 server.resource('treatments', { eventType: String, duration: Number, absolute: Number, rate: Number, insulin: Number, carbs:Number, glucose: Number, glucoseType: String, units: String, notes:String, reason:String, targetBottom:Number, targetTop:Number, created_at: Date, date: Date, enteredBy: String, NSCLIENT_ID: String});
 
-server.listen(3000);
+server.listen(process.env.PORT || 5000);
