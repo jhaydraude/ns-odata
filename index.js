@@ -1,6 +1,6 @@
 var odata = require('node-odata');
 
-var server = odata('mongodb://heroku_v8wpvnm4:mcsop9cpvr9tf742a4q8eupdit@ds133251.mlab.com:33251/heroku_v8wpvnm4');
+var server = odata(process.env.MONGO_URI);
 
 /*
 server.resource('book', {
